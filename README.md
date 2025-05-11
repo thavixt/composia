@@ -51,3 +51,12 @@ import '@thavixt/uikit/dist/index.css';
 /* or */
 @import "node_modules/@thavixt/uikit/dist/index.css";
 ```
+
+## Notes
+
+Publishing:
+
+```bash
+npm version v${next_version}
+npm publish
+```
