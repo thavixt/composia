@@ -12,13 +12,6 @@ const meta = {
   title: 'Basic/Breadcrumb',
   component: Breadcrumb,
   tags: ['autodocs'],
-  parameters: {
-    docs: {
-      description: {
-        component: 'TODO'
-      }
-    }
-  },
   args: {
     //
   }

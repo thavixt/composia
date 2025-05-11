@@ -5,13 +5,6 @@ const meta = {
   title: 'Basic/Checkbox',
   component: Checkbox,
   tags: ['autodocs'],
-  parameters: {
-    docs: {
-      description: {
-        component: 'TODO'
-      }
-    }
-  },
   args: {
     //
   }

@@ -6,11 +6,11 @@
 
 `composia` is a component library based on `shadcn` - including all the pre-made components and styling.
 
-[![Pipeline](https://github.com/thavixt/composia/actions/workflows/build.yml/badge.svg)](https://github.com/thavixt/composia/actions/workflows/build.yml)
-[![npm package](https://img.shields.io/npm/v/@thavixt/composia)](https://www.npmjs.com/package/@thavixt/tcn)
-![Bundle size - minified](https://img.shields.io/bundlephobia/min/%40thavixt%2Fcomposia)
+[![pipeline](https://github.com/thavixt/composia/actions/workflows/build.yml/badge.svg)](https://github.com/thavixt/composia/actions/workflows/build.yml)
+[![npm](https://img.shields.io/npm/v/@thavixt/composia)](https://www.npmjs.com/package/@thavixt/tcn)
+![bundle (min)](https://img.shields.io/bundlephobia/min/%40thavixt%2Fcomposia)
 
-[Storybook](https://composia.komlosidev.net/)
+Visit the [Storybook](https://composia.komlosidev.net/) to view all available components with examples.
 
 ## Installation
 
@@ -20,9 +20,34 @@ npm install @thavixt/composia
 
 ## Usage
 
-TODO
+An example of using the `<Button/>` component would look like this:
 
 ```tsx
-// @TODO:
-// Read code example
+import '@thavixt/composia/dist/index.css';
+import { Button } from '@thavixt/composia';
+
+export function MyComponent() {
+  return (
+    <Button variant="secondary" onClick={() => {
+      console.log('you clicked the button!');
+    }}>
+      Perform important task
+    </Button>
+  )
+}
+```
+
+Import the pre-built styles:
+
+```tsx
+// in your root React component
+import '@thavixt/uikit/dist/index.css';
+```
+*or* in your root `.css` file:
+
+```css
+/* index.css */
+@import "~@thavixt/uikit/dist/index.css";
+/* or */
+@import "node_modules/@thavixt/uikit/dist/index.css";
 ```

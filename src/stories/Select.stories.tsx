@@ -11,13 +11,6 @@ const meta = {
   title: 'Basic/Select',
   component: Select,
   tags: ['autodocs'],
-  parameters: {
-    docs: {
-      description: {
-        component: 'TODO'
-      }
-    }
-  },
   args: {
     //
   }

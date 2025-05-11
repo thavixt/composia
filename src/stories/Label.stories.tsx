@@ -4,13 +4,6 @@ const meta = {
   title: 'Basic/Label',
   component: Label,
   tags: ['autodocs'],
-  parameters: {
-    docs: {
-      description: {
-        component: 'TODO'
-      }
-    }
-  },
   args: {
     children: 'Your email address',
   }

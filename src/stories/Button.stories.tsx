@@ -19,15 +19,17 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  render: (args: ComponentProps<typeof Button>) => (
-    <div className="flex flex-col space-y-2 items-start">
-      <Button {...args}>Default</Button>
-      <Button {...args} variant="outline">Outline</Button>
-      <Button {...args} variant="ghost">Ghost</Button>
-      <Button {...args} variant="link">Link</Button>
-      <Button {...args} variant="destructive">Destructive</Button>
-      <Button {...args} variant="secondary">Secondary</Button>
-      <Button {...args} variant="default" disabled>Disabled</Button>
-    </div>
-  ),
+  render: function Story(args: ComponentProps<typeof Button>) {
+    return (
+      <div className="flex flex-col space-y-2 items-start">
+        <Button {...args}>Default</Button>
+        <Button {...args} variant="outline">Outline</Button>
+        <Button {...args} variant="ghost">Ghost</Button>
+        <Button {...args} variant="link">Link</Button>
+        <Button {...args} variant="destructive">Destructive</Button>
+        <Button {...args} variant="secondary">Secondary</Button>
+        <Button {...args} variant="default" disabled>Disabled</Button>
+      </div>
+    )
+  }
 };

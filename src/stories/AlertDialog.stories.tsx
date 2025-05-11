@@ -13,16 +13,9 @@ import {
 import { Button } from '@/components/ui/button';
 
 const meta = {
-  title: 'Basic/Alert',
+  title: 'Basic/Alert dialog',
   component: AlertDialog,
   tags: ['autodocs'],
-  parameters: {
-    docs: {
-      description: {
-        component: 'TODO'
-      }
-    }
-  },
 } satisfies Meta<typeof AlertDialog>;
 
 export default meta;
