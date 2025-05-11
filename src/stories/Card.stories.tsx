@@ -13,7 +13,7 @@ import { Input } from '@/components/ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 
 const meta = {
-  title: 'Basic/Card',
+  title: 'Layout/Card',
   component: Card,
   tags: ['autodocs'],
   args: {

@@ -3,3 +3,5 @@
 
 /* @custom-variant dark (&:is(.dark *)); */
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+@import "./theme.css";

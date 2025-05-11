@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/breadcrumb"
 
 const meta = {
-  title: 'Basic/Breadcrumb',
+  title: 'Layout/Breadcrumb',
   component: Breadcrumb,
   tags: ['autodocs'],
   args: {

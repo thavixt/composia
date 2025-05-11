@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/select"
 
 const meta = {
-  title: 'Basic/Select',
+  title: 'Input/Select',
   component: Select,
   tags: ['autodocs'],
   args: {
