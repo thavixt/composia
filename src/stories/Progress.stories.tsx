@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { Progress } from "@/components/ui/progress"
-import { useEffect, useState, type ComponentProps } from 'react';
+import { useState, type ComponentProps } from 'react';
+import { Label } from '@/components/ui/label';
 
 const meta = {
   title: 'Feedback/Progress',
@@ -18,13 +19,22 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
 
   render: function Story(args: ComponentProps<typeof Progress>) {
-    const [progress, setProgress] = useState(13)
+    const [progress] = useState(42);
 
-    useEffect(() => {
-      const timer = setTimeout(() => setProgress(Math.random() * 100), 2000)
-      return () => clearTimeout(timer)
-    }, [])
+    // useEffect(() => {
+    //   const interval = setInterval(() => {
+    //     const rnd = Math.floor(Math.random() * 100);
+    //     setProgress(rnd);
+    //   }, 1000)
+    //   return () => clearTimeout(interval);
+    // }, []);
 
-    return <Progress {...args} value={progress} className="w-[60%]" />;
+    return <div className='flex flex-col space-y-2'>
+      <Label>Downloading @thavixt/composia:</Label>
+      <div className="flex space-x-2 items-center">
+        <Progress {...args} value={progress} className="w-[60%]" />
+        <Label>{progress}%</Label>
+      </div>
+    </div>;
   }
 };

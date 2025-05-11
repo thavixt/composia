@@ -22,5 +22,9 @@ const config: StorybookConfig = {
   core: {
     disableTelemetry: true, // 👈 Disables telemetry
   },
+  managerHead: (head) => `
+    ${head}
+    <link rel="icon" href="/composia.svg" type="image/svg+xml">
+  `,
 };
 export default config;

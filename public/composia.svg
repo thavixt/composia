@@ -1,20 +1,38 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
-  <!-- Moth Body -->
-  <circle cx="100" cy="100" r="15" fill="purple" />
-  
-  <!-- Left Wing -->
-  <path d="M 50 100 Q 30 30, 90 40 Q 50 70, 50 100" fill="lightpurple"/>
-  
-  <!-- Right Wing -->
-  <path d="M 150 100 Q 170 30, 110 40 Q 150 70, 150 100" fill="lightpurple"/>
-  
-  <!-- Bottom Left Wing -->
-  <path d="M 50 100 Q 40 130, 100 140 Q 60 130, 50 100" fill="purple"/>
-  
-  <!-- Bottom Right Wing -->
-  <path d="M 150 100 Q 160 130, 100 140 Q 140 130, 150 100" fill="purple"/>
-  
-  <!-- Antennae -->
-  <line x1="95" y1="85" x2="85" y2="60" stroke="purple" stroke-width="2"/>
-  <line x1="105" y1="85" x2="115" y2="60" stroke="purple" stroke-width="2"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="64" height="52" viewBox="0 0 64 52" xml:space="preserve">
+<desc>Created with Fabric.js 5.2.4</desc>
+<defs>
+</defs>
+<rect x="0" y="0" width="100%" height="100%" fill="transparent"></rect>
+<g transform="matrix(Infinity NaN NaN Infinity 0 0)" id="6cf31b63-cfb6-405c-8b77-2fb467433d42"  >
+</g>
+<g transform="matrix(1 0 0 1 32 26)" id="fda0e69c-f7a9-40bc-8d86-a6e1e5f51954"  >
+<rect style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1; visibility: hidden;" vector-effect="non-scaling-stroke"  x="-32" y="-26" rx="0" ry="0" width="64" height="52" />
+</g>
+<g transform="matrix(0.38 0 0 0.38 32 26)"  >
+<g style="" vector-effect="non-scaling-stroke"   >
+		<g transform="matrix(1 0 0 1 0 12.37)"  >
+<circle style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(128,0,128); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  cx="0" cy="0" r="15" />
+</g>
+		<g transform="matrix(1 0 0 1 -35.98 -20)"  >
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  transform=" translate(-64.02, -67.63)" d="M 50 100 Q 30 30 90 40 Q 50 70 50 100" stroke-linecap="round" />
+</g>
+		<g transform="matrix(1 0 0 1 35.98 -20)"  >
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  transform=" translate(-135.98, -67.63)" d="M 150 100 Q 170 30 110 40 Q 150 70 150 100" stroke-linecap="round" />
+</g>
+		<g transform="matrix(1 0 0 1 -27.48 32.37)"  >
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(128,0,128); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  transform=" translate(-72.52, -120)" d="M 50 100 Q 40 130 100 140 Q 60 130 50 100" stroke-linecap="round" />
+</g>
+		<g transform="matrix(1 0 0 1 27.48 32.37)"  >
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(128,0,128); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  transform=" translate(-127.48, -120)" d="M 150 100 Q 160 130 100 140 Q 140 130 150 100" stroke-linecap="round" />
+</g>
+		<g transform="matrix(1 0 0 1 -10 -15.13)"  >
+<line style="stroke: rgb(128,0,128); stroke-width: 2; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  x1="5" y1="12.5" x2="-5" y2="-12.5" />
+</g>
+		<g transform="matrix(1 0 0 1 10 -15.13)"  >
+<line style="stroke: rgb(128,0,128); stroke-width: 2; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  x1="-5" y1="12.5" x2="5" y2="-12.5" />
+</g>
+</g>
+</g>
 </svg>
