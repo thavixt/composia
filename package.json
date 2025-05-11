@@ -2,7 +2,7 @@
   "name": "@thavixt/composia",
   "description": "React UI component library",
   "private": false,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "author": {
     "name": "Péter Komlósi",
