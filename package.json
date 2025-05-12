@@ -41,21 +41,22 @@
     "./package.json": "./package.json"
   },
   "scripts": {
+    "dev": "npm run storybook:dev",
+    "check": "npm run tsc && npm run lint:fix && npm run test && npm run css:build",
     "build": "rm -rf dist && tsc --project tsconfig.build.json",
-    "check": "npm run lint && npm run test && npm run tsc",
-    "tsc": "tsc --noEmit --project tsconfig.build.json",
+    "prebuild": "npm run check",
     "chromatic": "npx chromatic --project-token=chpt_7842f52765d0f2f --build-script-name=storybook:build",
     "css:build": "npx @tailwindcss/cli --input src/input.css --output ./dist/index.css --minify",
     "css:watch": "npx @tailwindcss/cli --input src/input.css --output ./dist/index.css --watch",
-    "dev": "npm run storybook:dev",
-    "lint": "eslint .",
-    "prebuild": "npm run check",
-    "postbuild": "npm run css:build",
+    "lint": "eslint . --cache",
+    "lint:fix": "eslint . --cache --fix",
     "storybook:build": "storybook build",
     "storybook:dev": "storybook dev -p 6006",
     "storybook:preview": "npm run storybook:build && vite preview",
     "tdd": "npx vitest",
-    "test": "npx vitest run"
+    "test": "npx vitest run",
+    "tsc": "tsc --noEmit --project tsconfig.build.json",
+    "prepare": "husky"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.10",
@@ -104,6 +105,7 @@
     "eslint-plugin-react-refresh": "^0.4.19",
     "eslint-plugin-storybook": "^0.12.0",
     "globals": "^16.0.0",
+    "husky": "^9.1.7",
     "playwright": "^1.52.0",
     "storybook": "^8.6.12",
     "tw-animate-css": "^1.2.9",
