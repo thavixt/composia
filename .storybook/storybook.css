@@ -1,0 +1,11 @@
+/* https://tailwindcss.com/blog/standalone-cli */
+
+@import 'tailwindcss';
+@import "tw-animate-css";
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *, &:is(.dark *)));
+
+@source "../src/components/**/*.tsx";
+@source "../src/stories/**/*.tsx";
+
+@import "../src/theme.css";

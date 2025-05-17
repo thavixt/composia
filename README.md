@@ -1,12 +1,12 @@
 # @thavixt/composia - a component library
 
-![Alt text](./public/composia.svg)
-
 [![npm](https://img.shields.io/npm/v/@thavixt/composia)](https://www.npmjs.com/package/@thavixt/tcn)
 
 [![pipeline](https://github.com/thavixt/composia/actions/workflows/build.yml/badge.svg)](https://github.com/thavixt/composia/actions/workflows/build.yml)
 
-<!-- ![bundle (min)](https://img.shields.io/bundlephobia/min/%40thavixt%2Fcomposia) -->
+![bundle (min)](https://img.shields.io/bundlephobia/min/%40thavixt%2Fcomposia)
+
+![Composia logo](./public/composia.svg)
 
 > Tiny blocks, big wings!
 
@@ -45,22 +45,13 @@ Import the pre-built styles in your root component:
 
 ```tsx
 // in your root React component
-import '@thavixt/uikit/dist/index.css';
+import '@thavixt/composia/dist/index.css';
 ```
 *or* in your root stylesheet file:
 
 ```css
 /* index.css */
-@import "~@thavixt/uikit/dist/index.css";
+@import "node_modules/@thavixt/composia/dist/index.css";
 /* or */
-@import "node_modules/@thavixt/uikit/dist/index.css";
-```
-
-## Notes
-
-Publich / deploy:
-
-```bash
-npm version v${next_version}
-npm publish
+@import "~@thavixt/composia/dist/index.css";
 ```

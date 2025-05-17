@@ -3,9 +3,8 @@
 @import 'tailwindcss' source(none);
 @import "tw-animate-css";
 
-/* @custom-variant dark (&:is(.dark *)); */
-@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
-
-@import "./theme.css";
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *, &:is(.dark *)));
 
 @source "./components/**/*.tsx";
+
+@import "./theme.css";

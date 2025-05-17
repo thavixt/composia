@@ -11,7 +11,7 @@ function ThemeVariableDictionaryComp(props: ThemeVariableDictionary) {
 }
 
 const meta = {
-  title: 'Basic/ThemeOverride',
+  title: 'Components/Theme override',
   component: ThemeOverride,
   subcomponents: {
     ThemeVariableDictionary: ThemeVariableDictionaryComp,

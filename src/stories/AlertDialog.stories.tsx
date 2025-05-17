@@ -13,7 +13,7 @@ import {
 import { Button } from '@/components/ui/button';
 
 const meta = {
-  title: 'Interaction/Alert dialog',
+  title: 'Components/Alert dialog',
   component: AlertDialog,
   tags: ['autodocs'],
 } satisfies Meta<typeof AlertDialog>;

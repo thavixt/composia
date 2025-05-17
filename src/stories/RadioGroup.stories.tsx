@@ -4,7 +4,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 
 
 const meta = {
-  title: 'Input/Radio group',
+  title: 'Components/Radio group',
   component: RadioGroup,
   tags: ['autodocs'],
   args: {
