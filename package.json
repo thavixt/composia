@@ -45,7 +45,7 @@
   "scripts": {
     "dev": "npm run storybook:dev",
     "check": "npm run tsc && npm run lint:fix && npm run test && npm run css:build",
-    "build": "rm -rf dist && tsc --project tsconfig.build.json",
+    "build": "rm -rf dist && tsc -p tsconfig.build.json && tsc-alias -p tsconfig.build.json",
     "prebuild": "npm run check",
     "chromatic": "npx chromatic --project-token=chpt_7842f52765d0f2f --build-script-name=storybook:build",
     "css:build": "npx @tailwindcss/cli --input src/input.css --output ./dist/index.css --minify",
@@ -135,6 +135,7 @@
     "husky": "^9.1.7",
     "playwright": "^1.52.0",
     "storybook": "^8.6.12",
+    "tsc-alias": "^1.8.16",
     "tw-animate-css": "^1.2.9",
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.30.1",
