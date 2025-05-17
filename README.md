@@ -4,11 +4,13 @@
 
 [![npm](https://img.shields.io/npm/v/@thavixt/composia)](https://www.npmjs.com/package/@thavixt/tcn)
 
-![GitHub last commit](https://img.shields.io/github/last-commit/thavixt/composia)
+![last commit](https://img.shields.io/github/last-commit/thavixt/composia)
 
-![bundle (min)](https://img.shields.io/bundlephobia/min/%40thavixt%2Fcomposia)
+![bundle (minzipped)](https://img.shields.io/bundlephobia/minzip/@thavixt/composia)
 
-![Composia logo](./public/composia.svg)
+> @todo: analyze bundle size at https://bundlephobia.com/package/@thavixt/composia
+
+![Composia logo](https://composia.komlosidev.net/composia.svg)
 
 > Tiny blocks, big wings!
 >
