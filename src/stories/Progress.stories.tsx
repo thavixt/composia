@@ -4,7 +4,7 @@ import { useState, type ComponentProps } from 'react';
 import { Label } from '@/components/ui/label';
 
 const meta = {
-  title: 'Components/Progress',
+  title: 'Stories/Progress',
   component: Progress,
   tags: ['autodocs'],
   args: {

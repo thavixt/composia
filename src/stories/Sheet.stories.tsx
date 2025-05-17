@@ -15,7 +15,7 @@ import {
 } from "@/components/ui/sheet"
 
 const meta = {
-  title: 'Components/Sheet',
+  title: 'Stories/Sheet',
   component: Sheet,
   subcomponents: {
     SheetClose,

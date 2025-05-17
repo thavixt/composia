@@ -4,7 +4,7 @@ import { Separator } from "@/components/ui/separator"
 import { cn } from '@/lib/utils';
 
 const meta = {
-  title: 'Components/Separator',
+  title: 'Stories/Separator',
   component: Separator,
   tags: ['autodocs'],
   args: {

@@ -5,7 +5,7 @@ import { fn } from '@storybook/test';
 import { Label } from '@/components/ui/label';
 
 const meta = {
-  title: 'Components/Slider',
+  title: 'Stories/Slider',
   component: Slider,
   tags: ['autodocs'],
   args: {

@@ -4,7 +4,7 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 import { AlertCircle } from "lucide-react"
 
 const meta = {
-  title: 'Components/Alert',
+  title: 'Stories/Alert',
   component: Alert,
   subcomponents: {
     AlertDescription,
@@ -12,7 +12,7 @@ const meta = {
   },
   tags: ['autodocs'],
   args: {
-    //
+    variant: 'default',
   },
   render: (args: ComponentProps<typeof Alert>) => {
     return (
@@ -32,3 +32,9 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {};
+
+export const Destructive: Story = {
+  args: {
+    variant: 'destructive'
+  }
+};

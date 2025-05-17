@@ -7,7 +7,7 @@ import {
 } from "@/components/ui/resizable"
 
 const meta = {
-  title: 'Components/Resizable',
+  title: 'Stories/Resizable',
   component: ResizablePanelGroup,
   subcomponents: {
     ResizablePanel,

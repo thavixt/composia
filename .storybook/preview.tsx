@@ -28,10 +28,14 @@ const preview: Preview = {
         document.documentElement.setAttribute('data-theme', theme);
       }, [theme]);
 
+      if (args.parameters.disableGlobalDecorator) {
+        return <Story />;
+      }
+
       return (
         // Option 2. - set the theme on the container element
         // <div className='size-fit' data-theme={theme}>
-        <div className='size-full flex flex-col place-items-center'>
+        <div className='size-full flex flex-col place-items-center p-12'>
           <Story />
         </div>
       )

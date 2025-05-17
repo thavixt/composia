@@ -39,7 +39,7 @@ type StoryProps = ComponentProps<typeof ChartContainer> & {
 };
 
 const meta = {
-  title: 'Components/Chart',
+  title: 'Stories/Chart',
   component: ChartContainer,
   tags: ['autodocs'],
   //parameters: {

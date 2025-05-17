@@ -20,7 +20,7 @@ import {
 } from "@/components/ui/command"
 
 const meta = {
-  title: 'Components/Command',
+  title: 'Stories/Command',
   component: Command,
   tags: ['autodocs'],
   args: {

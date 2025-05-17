@@ -3,6 +3,11 @@ import * as SwitchPrimitive from "@radix-ui/react-switch"
 
 import { cn } from "@/lib/utils"
 
+/**
+ * A control that allows the user to toggle between checked and not checked.
+ * 
+ * @see https://ui.shadcn.com/docs/components/switch
+ */
 function Switch({
   className,
   ...props

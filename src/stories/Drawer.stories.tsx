@@ -58,7 +58,7 @@ const data = [
 ]
 
 const meta = {
-  title: 'Components/Drawer',
+  title: 'Stories/Drawer',
   component: Drawer,
   tags: ['autodocs'],
   args: {
@@ -68,10 +68,10 @@ const meta = {
     autoFocus: true,
     dismissible: true,
     // modal: true,
-    onClose: fn(),
-    // onDrag: fn(),
-    onOpenChange: fn(),
-    // onRelease: fn(),
+    onClose: fn(console.log),
+    // onDrag: fn(console.log),
+    onOpenChange: fn(console.log),
+    // onRelease: fn(console.log),
   },
   render: function RenderDrawerStory(args: ComponentProps<typeof Drawer>) {
     const [goal, setGoal] = useState(350)
@@ -155,4 +155,5 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
+// @ts-expect-error @todo
 export const Default: Story = {};

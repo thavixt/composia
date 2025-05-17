@@ -11,7 +11,7 @@ function ThemeVariableDictionaryComp(props: ThemeVariableDictionary) {
 }
 
 const meta = {
-  title: 'Components/Theme override',
+  title: 'Stories/Theme override',
   component: ThemeOverride,
   subcomponents: {
     ThemeVariableDictionary: ThemeVariableDictionaryComp,
@@ -21,6 +21,11 @@ const meta = {
     light: {},
     dark: {},
   },
+  decorators: (Story) => (
+    <div className='size-full px-4 py-12'>
+      <Story />
+    </div>
+  ),
   render: function Story(args) {
     const hasOverrides = Object.keys({ ...args.light, ...args.dark }).length > 0;
     return (

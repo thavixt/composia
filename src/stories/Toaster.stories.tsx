@@ -9,7 +9,7 @@ interface PromiseToastResult {
 }
 
 const meta = {
-  title: 'Components/Toaster',
+  title: 'Stories/Toaster',
   component: Toaster,
   tags: ['autodocs'],
   decorators: (Story) => (

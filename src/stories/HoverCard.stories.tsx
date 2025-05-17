@@ -15,7 +15,7 @@ import {
 import { fn } from '@storybook/test';
 
 const meta = {
-  title: 'Components/Hover card',
+  title: 'Stories/Hover card',
   component: HoverCard,
   tags: ['autodocs'],
   args: {
@@ -23,7 +23,7 @@ const meta = {
     defaultOpen: false,
     open: undefined,
     openDelay: 250,
-    onOpenChange: fn(),
+    onOpenChange: fn(console.log),
   },
   render: function RenderHoverCardStory(args: ComponentProps<typeof HoverCard>) {
     return (

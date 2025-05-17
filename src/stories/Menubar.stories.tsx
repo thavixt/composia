@@ -18,11 +18,11 @@ import {
 import { fn } from '@storybook/test';
 
 const meta = {
-  title: 'Components/Menubar',
+  title: 'Stories/Menubar',
   component: Menubar,
   tags: ['autodocs'],
   args: {
-    onClick: fn(),
+    onClick: fn(console.log),
   },
   render: function RenderMenubarStory(args: ComponentProps<typeof Menubar>) {
     const [showBookmarkBar, setShowBookmarkBar] = useState(false);

@@ -1,7 +1,7 @@
 import * as React from "react"
 import { format } from "date-fns"
 import { CalendarIcon } from "lucide-react"
- 
+
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { Calendar } from "@/components/ui/calendar"
@@ -10,14 +10,24 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover"
-import type { Matcher } from "react-day-picker"
- 
+import type { SelectSingleEventHandler } from "react-day-picker"
+
+interface DatePickerProps {
+  defaultValue: Date;
+  onChange: (date: Date | undefined) => void;
+}
+
 /**
  * A date picker component with range and presets.
  */
-export function DatePicker() {
-  const [date, setDate] = React.useState<Date>()
- 
+export function DatePicker({ defaultValue, onChange }: DatePickerProps) {
+  const [date, setDate] = React.useState<Date | undefined>(defaultValue);
+
+  const onSelect: SelectSingleEventHandler = (value) => {
+    setDate(value);
+    onChange?.(value);
+  }
+
   return (
     <Popover>
       <PopoverTrigger asChild>
@@ -36,29 +46,10 @@ export function DatePicker() {
         <Calendar
           mode="single"
           selected={date}
-          onSelect={setDate}
+          onSelect={onSelect}
           initialFocus
         />
       </PopoverContent>
     </Popover>
   )
-}
-
-export function isDateRange(value: Matcher | Matcher[]): value is Matcher[] {
-  return Array.isArray(value) && value.length === 2 && value.every(isDate);
-}
-
-export function isDate(value: Matcher | Matcher[]): value is Matcher {
-  return value instanceof Date;
-}
-
-export function getCalendarDate(value: Matcher | Matcher[] | undefined | boolean): Matcher | Matcher[] {
-  if (!value) {
-    return new Date();
-  }
-  if (value === true) {
-    return new Date();
-  }
-
-  return value;
 }

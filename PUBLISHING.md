@@ -1,6 +1,6 @@
-# Notes
+# Notes about publishing
 
-Publich / deploy:
+Publish / deploy:
 
 ```bash
 npm version v${next_version}

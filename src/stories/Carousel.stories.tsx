@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/carousel"
 
 const meta = {
-  title: 'Components/Carousel',
+  title: 'Stories/Carousel',
   component: Carousel,
   tags: ['autodocs'],
   args: {

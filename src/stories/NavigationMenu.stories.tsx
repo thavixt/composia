@@ -14,7 +14,7 @@ import { forwardRef } from 'react';
 import { cn } from '@/lib/utils';
 
 const meta = {
-  title: 'Components/Navigation menu',
+  title: 'Stories/Navigation menu',
   component: NavigationMenu,
   tags: ['autodocs'],
   args: {

@@ -3,10 +3,15 @@ import type { ComponentProps } from 'react';
 import { Skeleton, SkeletonListItem } from "@/components/ui/skeleton"
 
 const meta = {
-  title: 'Components/Skeleton',
+  title: 'Stories/Skeleton',
   component: SkeletonListItem,
   subcomponents: { Skeleton },
   tags: ['autodocs'],
+  decorators: (Story) => (
+    <div className='size-full px-4 py-12'>
+      <Story />
+    </div>
+  ),
   args: {
     className: "w-full h-[20px] rounded-full"
   },

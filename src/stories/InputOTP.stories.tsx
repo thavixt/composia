@@ -10,15 +10,15 @@ import {
 import { fn } from '@storybook/test';
 
 const meta = {
-  title: 'Components/InputOTP',
+  title: 'Stories/Input (one-time password)',
   component: InputOTP,
   tags: ['autodocs'],
   args: {
     maxLength: 6,
     autoFocus: true,
     children: undefined,
-    onChange: fn(),
-    onComplete: fn(),
+    onChange: fn(console.log),
+    onComplete: fn(console.log),
     inputMode: 'numeric',
     // pattern: InputOTPPatterns.onlyChars,
     pattern: InputOTPPatterns.onlyDigits,

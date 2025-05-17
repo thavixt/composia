@@ -28,7 +28,7 @@ const frameworks = [
 ]
 
 const meta = {
-  title: 'Components/Combobox',
+  title: 'Stories/Combobox',
   component: Combobox,
   tags: ['autodocs'],
   args: {
@@ -38,7 +38,7 @@ const meta = {
     placeholder: "Select a framework...",
     searchPlaceholder: "Search for a framework...",
     values: frameworks,
-    onChange: fn(),
+    onChange: fn(console.log),
   },
   render: function RenderComboboxStory(args: ComponentProps<typeof Combobox>) {
     return (

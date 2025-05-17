@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/select"
 
 const meta = {
-  title: 'Components/Select',
+  title: 'Stories/Select',
   component: Select,
   tags: ['autodocs'],
   args: {

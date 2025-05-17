@@ -30,10 +30,10 @@ import { Skeleton, SkeletonListItem } from '@/components/ui/skeleton';
 import { Label } from '@/components/ui/label';
 import { Button } from '@/components/ui/button';
 
-const listItems = 8;
+const listItems = 6;
 
 const meta = {
-  title: 'Components/Sidebar',
+  title: 'Stories/Sidebar',
   component: SidebarProvider,
   subcomponents: {
     Sidebar,
@@ -63,7 +63,7 @@ const meta = {
   tags: ['autodocs'],
   args: {
     children: (
-      <div className="flex flex-col gap-12 p-8">
+      <div className="flex flex-col gap-12">
         <div>
           <Label>Lots of skeletons below:</Label>
         </div>

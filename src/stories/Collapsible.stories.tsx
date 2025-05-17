@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/collapsible"
 
 const meta = {
-  title: 'Components/Collapsible',
+  title: 'Stories/Collapsible',
   component: Collapsible,
   tags: ['autodocs'],
   args: {

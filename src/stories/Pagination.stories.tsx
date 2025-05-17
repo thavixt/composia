@@ -4,11 +4,11 @@ import { Pagination } from "@/components/ui/pagination"
 import { fn } from '@storybook/test';
 
 const meta = {
-  title: 'Components/Pagination',
+  title: 'Stories/Pagination',
   component: Pagination,
   tags: ['autodocs'],
   args: {
-    onChange: fn(),
+    onChange: fn(console.log),
     pageCount: 10,
     defaultPage: 4,
     showPages: 2,

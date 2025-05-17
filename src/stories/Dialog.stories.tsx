@@ -14,7 +14,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 
 const meta = {
-  title: 'Components/Dialog',
+  title: 'Stories/Dialog',
   component: Dialog,
   tags: ['autodocs'],
   args: {

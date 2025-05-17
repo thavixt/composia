@@ -3,7 +3,7 @@ import { Button } from '../components/ui/button';
 import type { ComponentProps } from 'react';
 
 const meta = {
-  title: 'Components/Button',
+  title: 'Stories/Button',
   component: Button,
   tags: ['autodocs'],
   args: {

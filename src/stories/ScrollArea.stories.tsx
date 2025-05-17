@@ -5,7 +5,7 @@ import { Separator } from "@/components/ui/separator"
 import { Label } from '@/components/ui/label';
 
 const meta = {
-  title: 'Components/Scroll area',
+  title: 'Stories/Scroll area',
   component: ScrollArea,
   subcomponents: {
     ScrollBar,

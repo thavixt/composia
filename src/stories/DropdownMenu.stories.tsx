@@ -34,14 +34,14 @@ import {
 import { fn } from '@storybook/test';
 
 const meta = {
-  title: 'Components/Dropdown menu',
+  title: 'Stories/Dropdown menu',
   component: DropdownMenu,
   tags: ['autodocs'],
   args: {
     open: undefined,
     defaultOpen: false,
-    onClick: fn(),
-    // onOpenChange: fn(),
+    onClick: fn(console.log),
+    // onOpenChange: fn(console.log),
     
   },
   render: function RenderDropdownMenuStory(args: ComponentProps<typeof DropdownMenu>) {

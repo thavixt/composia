@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { 
+import {
   AlertDialog,
   AlertDialogAction,
   AlertDialogCancel,
@@ -9,11 +9,11 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
- } from '@/components/ui/alert-dialog';
+} from '@/components/ui/alert-dialog';
 import { Button } from '@/components/ui/button';
 
 const meta = {
-  title: 'Components/Alert dialog',
+  title: 'Stories/Alert dialog',
   component: AlertDialog,
   tags: ['autodocs'],
 } satisfies Meta<typeof AlertDialog>;

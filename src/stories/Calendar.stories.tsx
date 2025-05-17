@@ -5,14 +5,14 @@ import { useState, type ComponentProps } from 'react';
 import type { DateRange } from 'react-day-picker';
 
 const meta = {
-  title: 'Components/Calendar',
+  title: 'Stories/Calendar',
   component: Calendar,
   tags: ['autodocs'],
   args: {
     className: "",
     initialFocus: true,
     mode: 'single',
-    onSelect: fn(),
+    onSelect: fn(console.log),
     selected: new Date(),
     defaultMonth: new Date(),
   },
