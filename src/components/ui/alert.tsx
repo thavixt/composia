@@ -1,7 +1,7 @@
-import * as React from "react"
 import { cva, type VariantProps } from "class-variance-authority"
 
 import { cn } from "@/lib/utils"
+import type { PropsWithChildren } from "react"
 
 const alertVariants = cva(
   "relative w-full rounded-lg border px-4 py-3 text-sm grid has-[>svg]:grid-cols-[calc(var(--spacing)*4)_1fr] grid-cols-[0_1fr] has-[>svg]:gap-x-3 gap-y-0.5 items-start [&>svg]:size-4 [&>svg]:translate-y-0.5 [&>svg]:text-current",
@@ -66,4 +66,22 @@ function AlertDescription({
   )
 }
 
-export { Alert, AlertTitle, AlertDescription }
+type BaseAlertProps = React.ComponentProps<"div"> & VariantProps<typeof alertVariants>;
+
+interface AlertSectionProps extends BaseAlertProps {
+  title: string;
+  description?: string;
+}
+
+function AlertSection({ title, description, children, ...args }: PropsWithChildren<AlertSectionProps>) {
+  return (
+    <Alert {...args}>
+      {children}
+      <AlertTitle>{title}</AlertTitle>
+      {description ? <AlertDescription>{description}</AlertDescription> : null}
+    </Alert>
+  );
+}
+
+// export { Alert, AlertTitle, AlertDescription }
+export { AlertSection as Alert }

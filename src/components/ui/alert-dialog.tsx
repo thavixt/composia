@@ -3,6 +3,7 @@ import * as AlertDialogPrimitive from "@radix-ui/react-alert-dialog"
 
 import { cn } from "@/lib/utils"
 import { buttonVariants } from "@/components/ui/button"
+import type { ReactNode } from "react"
 
 /**
  * A modal dialog that interrupts the user with important content and expects a response.
@@ -143,16 +144,58 @@ function AlertDialogCancel({
   )
 }
 
+interface AlertProps extends AlertDialogPrimitive.AlertDialogProps {
+  onCancel: () => void;
+  cancelLabel?: string;
+  onContinue: () => void;
+  continueLabel?: string;
+  title: string;
+  description?: string;
+  trigger: ReactNode;
+}
+
+function Alert({
+  title, description, trigger,
+  onCancel, onContinue,
+  cancelLabel, continueLabel,
+  ...alertDialogProps
+}: AlertProps) {
+  return (
+    <AlertDialog {...alertDialogProps}>
+      <AlertDialogTrigger asChild>
+        {trigger}
+      </AlertDialogTrigger>
+      <AlertDialogContent>
+        <AlertDialogHeader>
+          <AlertDialogTitle>{title}</AlertDialogTitle>
+          {description ? (
+            <AlertDialogDescription>{description}</AlertDialogDescription>
+          ) : null}
+        </AlertDialogHeader>
+        <AlertDialogFooter>
+          <AlertDialogCancel onClick={onCancel}>
+            {cancelLabel ?? 'Cancel'}
+          </AlertDialogCancel>
+          <AlertDialogAction onClick={onContinue}>
+            {continueLabel ?? 'Continue'}
+          </AlertDialogAction>
+        </AlertDialogFooter>
+      </AlertDialogContent>
+    </AlertDialog>
+  )
+}
+
 export {
-  AlertDialog,
-  AlertDialogPortal,
-  AlertDialogOverlay,
-  AlertDialogTrigger,
-  AlertDialogContent,
-  AlertDialogHeader,
-  AlertDialogFooter,
-  AlertDialogTitle,
-  AlertDialogDescription,
-  AlertDialogAction,
-  AlertDialogCancel,
+  Alert as AlertDialog,
+  // AlertDialog,
+  // AlertDialogPortal,
+  // AlertDialogOverlay,
+  // AlertDialogTrigger,
+  // AlertDialogContent,
+  // AlertDialogHeader,
+  // AlertDialogFooter,
+  // AlertDialogTitle,
+  // AlertDialogDescription,
+  // AlertDialogAction,
+  // AlertDialogCancel,
 }

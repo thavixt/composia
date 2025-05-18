@@ -1,8 +1,8 @@
 /** components */
 export { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from './components/ui/accordion';
-export { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger } from './components/ui/alert-dialog';
+export { AlertDialog } from './components/ui/alert-dialog';
 export { AspectRatio } from './components/ui/aspect-ratio';
-export { Avatar, AvatarFallback, AvatarImage } from './components/ui/avatar';
+export { Avatar } from './components/ui/avatar';
 export { Badge, badgeVariants } from './components/ui/badge';
 export { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator, } from './components/ui/breadcrumb';
 export { Button, buttonVariants } from './components/ui/button';
