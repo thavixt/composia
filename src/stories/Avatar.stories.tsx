@@ -16,8 +16,8 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = { args: { size: 'md'}};
+export const Size_sm: Story = { args: { size: 'sm'}};
 
-export const Sm: Story = { args: { size: 'sm'}};
+export const Size_md: Story = { args: { size: 'md'}};
 
-export const LG: Story = { args: { size: 'lg'}};
+export const Size_lg: Story = { args: { size: 'lg'}};
