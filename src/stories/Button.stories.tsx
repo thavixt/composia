@@ -1,16 +1,16 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { Button } from '../components/ui/button';
 import type { ComponentProps } from 'react';
+import { CatIcon } from 'lucide-react';
 
 const meta = {
-  title: 'Stories/Button',
   component: Button,
   tags: ['autodocs'],
   args: {
     children: 'Button',
     variant: 'default',
     disabled: false,
-    size: 'lg',
+    size: 'md',
   }
 } satisfies Meta<typeof Button>;
 
@@ -19,16 +19,16 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  render: function Story(args: ComponentProps<typeof Button>) {
+  render: function Story({ children, ...args }: ComponentProps<typeof Button>) {
     return (
-      <div className="flex flex-col space-y-2 items-start">
-        <Button {...args}>Default</Button>
-        <Button {...args} variant="outline">Outline</Button>
-        <Button {...args} variant="ghost">Ghost</Button>
-        <Button {...args} variant="link">Link</Button>
-        <Button {...args} variant="destructive">Destructive</Button>
-        <Button {...args} variant="secondary">Secondary</Button>
-        <Button {...args} variant="default" disabled>Disabled</Button>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 items-start">
+        <Button {...args}>{children} <CatIcon /> (default)</Button>
+        <Button {...args} variant="outline">{children} (outline)</Button>
+        <Button {...args} variant="ghost">{children} (ghost)</Button>
+        <Button {...args} variant="link">{children} (link)</Button>
+        <Button {...args} variant="destructive">{children} (destructive)</Button>
+        <Button {...args} variant="secondary">{children} (secondary)</Button>
+        <Button {...args} variant="default" disabled>{children} (default)</Button>
       </div>
     )
   }

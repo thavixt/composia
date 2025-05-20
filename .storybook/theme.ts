@@ -6,5 +6,5 @@ export default create({
   // brandUrl: '/',
   brandUrl: 'https://github.com/thavixt/composia',
   brandImage: '/composia.svg',
-  brandTarget: '_self',
+  brandTarget: '_blank',
 });

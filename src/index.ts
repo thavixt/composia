@@ -5,7 +5,7 @@ export { AspectRatio } from './components/ui/aspect-ratio';
 export { Avatar } from './components/ui/avatar';
 export { Badge, badgeVariants } from './components/ui/badge';
 export { Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator, } from './components/ui/breadcrumb';
-export { Button, buttonVariants } from './components/ui/button';
+export { Button } from './components/ui/button';
 export { Calendar, } from './components/ui/calendar';
 export { Card, CardAction, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from './components/ui/card';
 export { Carousel, type CarouselApi, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from './components/ui/carousel';

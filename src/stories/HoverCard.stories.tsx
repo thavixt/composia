@@ -1,11 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import type { ComponentProps } from 'react';
 import { CalendarDays } from "lucide-react"
-import {
-  Avatar,
-  AvatarFallback,
-  AvatarImage,
-} from "@/components/ui/avatar"
+import { Avatar } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
 import {
   HoverCard,
@@ -33,10 +29,7 @@ const meta = {
         </HoverCardTrigger>
         <HoverCardContent className="w-80">
           <div className="flex justify-between space-x-4">
-            <Avatar>
-              <AvatarImage src="https://github.com/vercel.png" />
-              <AvatarFallback>VC</AvatarFallback>
-            </Avatar>
+            <Avatar src="https://github.com/vercel.png" fallback='VC' />
             <div className="space-y-1">
               <h4 className="text-sm font-semibold">@nextjs</h4>
               <p className="text-sm">

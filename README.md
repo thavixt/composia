@@ -7,16 +7,13 @@
 ![last commit](https://img.shields.io/github/last-commit/thavixt/composia)
 
 ![bundle (minzipped)](https://img.shields.io/bundlephobia/minzip/@thavixt/composia)
-
 > @todo: analyze bundle size at https://bundlephobia.com/package/@thavixt/composia
 
-![Composia logo](https://composia.komlosidev.net/composia.svg)
-
 > Tiny blocks, big wings!
->
+![Composia logo](https://composia.komlosidev.net/composia.svg)
 > [Composia credula](https://en.wikipedia.org/wiki/Composia) is a tiger moth of the family Erebidae first described in 1775.
 
-`composia` is a React component library based on `shadcn`, including all the pre-made components and styling- with some modifications and additional components.
+`composia` is a React component library based on `shadcn` with some modifications and additional components.
 
 Visit the [Storybook](https://composia.komlosidev.net/) to view all available components with code examples.
 
