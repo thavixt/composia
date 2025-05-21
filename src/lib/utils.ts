@@ -24,3 +24,5 @@ export function getCalendarDate(value: Matcher | Matcher[] | undefined | boolean
 
   return value;
 }
+
+export const noop = () => {};

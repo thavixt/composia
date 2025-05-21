@@ -2,7 +2,7 @@ import * as React from "react"
 import * as DropdownMenuPrimitive from "@radix-ui/react-dropdown-menu"
 import { CheckIcon, ChevronRightIcon, CircleIcon } from "lucide-react"
 
-import { cn } from "@/lib/utils"
+import { cn, noop } from "@/lib/utils"
 import { createContext } from "react"
 
 interface DropdownContextType {
@@ -20,7 +20,7 @@ function useDropdownContext() {
 }
 
 interface DropdownMenuProps extends React.ComponentProps<typeof DropdownMenuPrimitive.Root> {
-  onClick: (name: string) => void;
+  onClick?: (name: string) => void;
 }
 
 /**
@@ -32,7 +32,7 @@ function DropdownMenu({
 }: DropdownMenuProps) {
   return (
     <DropdownContext.Provider
-      value={{ onClick }}
+      value={{ onClick: onClick ?? noop }}
     >
       <DropdownMenuPrimitive.Root data-slot="dropdown-menu" {...props} />
     </DropdownContext.Provider>

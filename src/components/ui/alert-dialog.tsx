@@ -154,6 +154,9 @@ interface AlertProps extends AlertDialogPrimitive.AlertDialogProps {
   trigger: ReactNode;
 }
 
+/**
+ * Displays a callout for user attention.
+ */
 function Alert({
   title, description, trigger,
   onCancel, onContinue,

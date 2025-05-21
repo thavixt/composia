@@ -69,6 +69,9 @@ interface AvatarImageProps extends BaseAvatarProps {
   fallback?: string;
 }
 
+/**
+ * An image element with a fallback for representing the user.
+ */
 function AvatarComponent({ src, fallback, ...avatarProps}: AvatarImageProps) {
   return (
     <Avatar {...avatarProps}>
