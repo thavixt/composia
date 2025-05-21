@@ -1,6 +1,6 @@
 import type { Preview } from '@storybook/react'
 import { withThemeByDataAttribute } from '@storybook/addon-themes';
-import { Controls, Description, Primary, Title, Stories } from '@storybook/blocks';
+import { Controls, Description, Primary, Title } from '@storybook/blocks';
 import { storyModes } from './modes';
 import { useEffect } from 'react';
 
@@ -11,9 +11,9 @@ const docsPage = () => (
     <Title />
     <Description />
     <Primary />
-    <Controls />
     {/* <Source /> */}
-    <Stories includePrimary={false} />
+    <Controls />
+    {/* <Stories includePrimary={false} /> */}
   </>
 );
 
@@ -49,7 +49,7 @@ const preview: Preview = {
         // Option 2. - set the theme on the container element
         // <div className='size-fit' data-theme={theme}>
         // <div className='size-full flex flex-col place-items-center p-12'>
-        <div className="storybook-story-preview flex min-h-[350px] w-full justify-center items-center p-16">
+        <div className="storybook-story-preview min-h-[120px] w-full flex justify-center items-center p-16">
           <Story />
         </div>
       )

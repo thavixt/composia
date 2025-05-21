@@ -83,3 +83,4 @@ function AvatarComponent({ src, fallback, ...avatarProps}: AvatarImageProps) {
 
 // export { Avatar, AvatarImage, AvatarFallback }
 export { AvatarComponent as Avatar }
+export type { AvatarImageProps as AvatarProps }

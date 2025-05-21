@@ -155,7 +155,7 @@ function BreadcrumbPart({ item, onClick, end }: {
   );
 }
 
-export interface BreadcrumbsProps {
+interface BreadcrumbsProps {
   onClick?: (key: string) => void;
   items: BreadcrumbItem[];
 }
@@ -179,3 +179,4 @@ function Breadcrumbs({ onClick, items }: BreadcrumbsProps) {
 }
 
 export { Breadcrumbs }
+export type { BreadcrumbsProps }

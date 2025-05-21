@@ -1,11 +1,11 @@
 /** components */
 export { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from './components/ui/accordion';
-export { AlertDialog } from './components/ui/alert-dialog';
-export { AspectRatio } from './components/ui/aspect-ratio';
-export { Avatar } from './components/ui/avatar';
-export { Badge, badgeVariants } from './components/ui/badge';
-export { Breadcrumbs } from './components/ui/breadcrumbs';
-export { Button } from './components/ui/button';
+export { AlertDialog, type AlertProps } from './components/ui/alert-dialog';
+export { AspectRatio, type AspectRatioProps } from './components/ui/aspect-ratio';
+export { Avatar, type AvatarProps } from './components/ui/avatar';
+export { Badge, badgeVariants, type BadgeProps } from './components/ui/badge';
+export { Breadcrumbs, type BreadcrumbsProps } from './components/ui/breadcrumbs';
+export { Button, type ButtonProps } from './components/ui/button';
 export { Calendar, } from './components/ui/calendar';
 export { Card, CardAction, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from './components/ui/card';
 export { Carousel, type CarouselApi, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from './components/ui/carousel';
@@ -20,6 +20,7 @@ export { Dialog, DialogClose, DialogContent, DialogDescription, DialogFooter, Di
 export { Drawer, DrawerClose, DrawerContent, DrawerDescription, DrawerFooter, DrawerHeader, DrawerOverlay, DrawerPortal, DrawerTitle, DrawerTrigger } from './components/ui/drawer';
 export { DropdownMenu, DropdownMenuCheckboxItem, DropdownMenuContent, DropdownMenuGroup, DropdownMenuItem, DropdownMenuLabel, DropdownMenuPortal, DropdownMenuRadioGroup, DropdownMenuRadioItem, DropdownMenuSeparator, DropdownMenuShortcut, DropdownMenuSub, DropdownMenuSubContent, DropdownMenuSubTrigger, DropdownMenuTrigger } from './components/ui/dropdown-menu';
 export { HoverCard, HoverCardContent, HoverCardTrigger } from './components/ui/hover-card';
+export { Icon, type IconName, type IconProps } from './components/ui/icon';
 export { InputOTP, InputOTPGroup, InputOTPPatterns, InputOTPSeparator, InputOTPSlot } from './components/ui/input-otp';
 export { Input } from './components/ui/input';
 export { Label } from './components/ui/label';

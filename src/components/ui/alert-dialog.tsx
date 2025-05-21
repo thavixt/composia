@@ -144,7 +144,7 @@ function AlertDialogCancel({
   )
 }
 
-interface AlertProps extends AlertDialogPrimitive.AlertDialogProps {
+export interface AlertProps extends AlertDialogPrimitive.AlertDialogProps {
   onCancel: () => void;
   cancelLabel?: string;
   onContinue: () => void;

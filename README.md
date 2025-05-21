@@ -1,18 +1,14 @@
 # @thavixt/composia - a component library
 
-[![pipeline](https://github.com/thavixt/composia/actions/workflows/build.yml/badge.svg)](https://github.com/thavixt/composia/actions/workflows/build.yml)
+| npm | github | bundle |
+| --- | --- | --- |
+| [![](https://img.shields.io/npm/v/@thavixt/composia?label=latest)](https://www.npmjs.com/package/@thavixt/composia) | ![GitHub last commit](https://img.shields.io/github/last-commit/thavixt/composia) | ![bundle (minified)](https://img.shields.io/bundlephobia/min/@thavixt/composia) |
+| ![NPM Last Update](https://img.shields.io/npm/last-update/%40thavixt%2Fcomposia) | [![pipeline](https://github.com/thavixt/composia/actions/workflows/build.yml/badge.svg)](https://github.com/thavixt/composia/actions/workflows/build.yml) | ![bundle (minified)](https://img.shields.io/bundlephobia/minzip/@thavixt/composia) |
+<!-- > @todo: analyze (and reduce) bundle size: https://bundlephobia.com/package/@thavixt/composia -->
 
-[![npm](https://img.shields.io/npm/v/@thavixt/composia)](https://www.npmjs.com/package/@thavixt/tcn)
-
-![last commit](https://img.shields.io/github/last-commit/thavixt/composia)
-
-![bundle (minzipped)](https://img.shields.io/bundlephobia/minzip/@thavixt/composia)
-> @todo: analyze bundle size at https://bundlephobia.com/package/@thavixt/composia
-
-> Tiny blocks, big wings!
+Tiny blocks, big wings!
 ![Composia logo](https://composia.komlosidev.net/composia.svg)
-> [Composia credula](https://en.wikipedia.org/wiki/Composia) is a tiger moth of the family Erebidae first described in 1775.
-
+<!-- [Composia credula](https://en.wikipedia.org/wiki/Composia) is a tiger moth of the family Erebidae first described in 1775. -->
 `composia` is a React component library based on `shadcn` with some modifications and additional components.
 
 Visit the [Storybook](https://composia.komlosidev.net/) to view all available components with code examples.
